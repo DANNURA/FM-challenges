@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f7fe;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: white;
+}
+
+@media (min-width: 768px) {
+    .card {
+        flex-direction: row;
+    }
+}
+
+.result-section {
+    flex: 1;
+    background: linear-gradient(135deg, #6a85f5, #a1c4fd);
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.result-section h1 {
+    font-size: 60px;
+    margin: 0;
+}
+
+.result-section p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.summary-section {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.summary-section h2 {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.summary-item span {
+    font-size: 16px;
+}
+
+.summary-item .label {
+    color: #888;
+}
+
+.summary-item .score {
+    font-weight: bold;
+    color: #333;
+}
+
+.continue-btn {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.continue-btn button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #333;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.continue-btn button:hover {
+    background-color: #555;
+}
+
+.continue-btn button:focus {
+    outline: 2px solid #6a85f5;
+    outline-offset: 2px;
+}
+
+.summary-item:hover .label {
+    color: #6a85f5;
+}
+
+.summary-item:hover .score {
+    color: #a1c4fd;
+}
