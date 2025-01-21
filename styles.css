@@ -16,7 +16,7 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
     overflow: hidden;
-    background-color: white;
+    background-color: rgb(30, 15, 15);
 }
 
 @media (min-width: 768px) {
